@@ -1,0 +1,31 @@
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+    }
+}
+ext {
+    // project config
+    applicationId = "com.haomini.test1"
+    compileSdkVersion = 26
+    buildToolsVersion = "26.0.1"
+    minSdkVersion = 15
+    targetSdkVersion = 26
+    versionCode = 1
+    versionName = "1.0"
+
+    supportVersion = "26.1.0"
+    junitVersion = "4.12"
+    constraintVersion = "1.0.2"
+    meituanVersion = "0.4.7"
+
+    support = [
+            supportV7        : "com.android.support:appcompat-v7:$supportVersion",
+            recycler         : "com.android.support:recyclerview-v7:$supportVersion",
+            junit            : "junit:junit:$junitVersion",
+            constraint_layout: "com.android.support.constraint:constraint-layout:$constraintVersion",
+            robust           : "com.meituan.robust:robust:$meituanVersion",
+            kotlin           : "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    ]
+}
